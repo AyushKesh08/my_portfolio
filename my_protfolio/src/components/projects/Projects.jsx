@@ -44,7 +44,7 @@ function Projects() {
             </div>
 
             <div className="project-links">
-              <a href="https://github.com/AyushKesh08/Student_Management_System.git" target="_blank">GitHub</a>
+              <a href="https://github.com/AyushKesh08/School_Management_System.git" target="_blank">GitHub</a>
               {/* <a href="#" target="_blank">Live Demo</a> */}
             </div>
 
