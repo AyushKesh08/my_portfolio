@@ -1,0 +1,156 @@
+.achievements {
+  min-height: 80vh;
+  padding: 100px 10%;
+  background-color: #0b0b0f;
+}
+
+.achievements-header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-subtitle {
+  color: #6c63ff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.achievements-header h2 {
+  color: #ffffff;
+  font-size: 42px;
+}
+
+/* Cards Container */
+
+.achievements-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Achievement Card */
+
+.achievement-card {
+  overflow: hidden;
+
+  background-color: #13131a;
+  border: 1px solid #25252d;
+  border-radius: 14px;
+
+  transition: 0.3s ease;
+}
+
+.achievement-card:hover {
+  border-color: #6c63ff;
+  transform: translateY(-6px);
+}
+
+/* Certificate Image */
+
+.achievement-image {
+  width: 100%;
+  height: 240px;
+
+  background-color: #1b1b24;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.achievement-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.3s ease;
+}
+
+.achievement-card:hover .achievement-image img {
+  transform: scale(1.03);
+}
+
+/* Content */
+
+.achievement-content {
+  padding: 25px;
+}
+
+.achievement-content h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.achievement-content p {
+  color: #a7a7b0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .achievements {
+    padding: 80px 6%;
+  }
+
+  .achievements-header h2 {
+    font-size: 36px;
+  }
+
+  .achievements-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .achievements {
+    min-height: auto;
+    padding: 70px 25px;
+  }
+
+  .achievements-header {
+    margin-bottom: 40px;
+  }
+
+  .achievements-header h2 {
+    font-size: 32px;
+  }
+
+  .achievements-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .achievement-image {
+    height: 230px;
+  }
+
+  .achievement-content {
+    padding: 22px;
+  }
+
+  .achievement-content h3 {
+    font-size: 19px;
+  }
+
+  .achievement-content p {
+    font-size: 14px;
+  }
+
+}
